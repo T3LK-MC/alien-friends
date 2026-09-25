@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "alien-friends",
+	"version": "${version}",
+	"name": "Alien friends",
+	"description": "This mod adds a cute little alien friend",
+	"authors": [
+		"T3LK"
+	],
+	"contact": {
+		"homepage": "https://t3lk.fr",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/alien-friends/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"telk.alien.frenz.AlienFriends"
+		],
+		"fabric-datagen": [
+			"telk.alien.frenz.AlienFriendsDataGenerator"
+		],
+		"client": [
+			"telk.alien.frenz.AlienModClient"
+		]
+	},
+	"mixins": [
+		"alien-friends.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
