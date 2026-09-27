@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "alien-friends:item/zab_zab_spawn_egg"
+  }
+}

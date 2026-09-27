@@ -1,9 +1,9 @@
 package telk.alien.frenz;
 
 import net.fabricmc.api.ModInitializer;
-
+import telk.alien.frenz.block.ModBlocks;
+import telk.alien.frenz.item.ModItems;
 import net.minecraft.resources.ResourceLocation;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,6 +13,7 @@ public class AlienFriends implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
