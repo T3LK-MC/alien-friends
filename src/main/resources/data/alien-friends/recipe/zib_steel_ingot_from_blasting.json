@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 50,
+  "experience": 1,
+  "group": "zib_steel_ingot",
+  "ingredient": {
+    "item": "alien-friends:raw_zib_steel_ore"
+  },
+  "result": {
+    "id": "alien-friends:zib_steel_ingot"
+  }
+}

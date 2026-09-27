@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "alien-friends:block/deepslate_zib_steel_ore"
+  }
+}

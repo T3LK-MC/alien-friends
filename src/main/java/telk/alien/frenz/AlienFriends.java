@@ -6,6 +6,7 @@ import telk.alien.frenz.item.ModItems;
 import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import telk.alien.frenz.item.ModItemsGroups;
 
 public class AlienFriends implements ModInitializer {
 	public static final String MOD_ID = "alien-friends";
@@ -13,6 +14,7 @@ public class AlienFriends implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemsGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}

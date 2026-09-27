@@ -5,5 +5,8 @@
   "item.alien-friends.zib_steel_ingot": "Zibranium Ingot",
 
   "block.alien-friends.zib_steel_ore": "Zibranium Ore",
-  "block.alien-friends.zib_steel_block": "Block of Zibranium"
+  "block.alien-friends.deepslate_zib_steel_ore": "Deepslate Zibranium Ore",
+  "block.alien-friends.zib_steel_block": "Block of Zibranium",
+
+  "itemgroup.alien-friends.alien_items": "Alien Items"
 }
