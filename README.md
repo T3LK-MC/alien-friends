@@ -1,6 +1,7 @@
 # 👽 Alien Friends
 
-A cozy little Fabric mod that brings some extraterrestrial charm to your Minecraft world — glowing alien ores, curious critters, and a coin or two from outer space.
+A cozy little Fabric mod that brings some extraterrestrial charm to your Minecraft world — glowing alien ores, (sometimes) helpful friends, and a weird currency from outer space.
+This is my first ever mod project to learn how to make my own mods and implement them in the game.
 
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-62B47A?style=flat-square)
 ![Fabric](https://img.shields.io/badge/Fabric-Loom%201.18.2-3C5A8A?style=flat-square)
@@ -22,7 +23,7 @@ More alien oddities are on the way — this project is still very much growing.
 1. Install [Fabric Loader](https://fabricmc.net/use/) for Minecraft **1.21.1**
 2. Grab the [Fabric API](https://modrinth.com/mod/fabric-api) — required
 3. Drop the mod `.jar` into your `mods` folder
-4. Launch and enjoy the visitors 👽
+4. Launch and enjoy the visitors from another world 👽
 
 ## 🛠️ Building from source
 
@@ -40,4 +41,5 @@ Released under **CC0-1.0** — do whatever you'd like with it.
 
 ## 💚 Credits
 
-Made with curiosity (and a little chaos) by **T3LK-MC**.
+First ever mod by **T3LK-MC**.
+With great help from my awesome friend **RUKI_HOI**
