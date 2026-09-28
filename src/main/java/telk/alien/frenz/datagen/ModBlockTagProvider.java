@@ -16,9 +16,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void addTags(HolderLookup.Provider wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.DEEPSLATE_ZIB_STEEL_ORE);
-        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.DEEPSLATE_ZIB_STEEL_ORE)
+                .add(ModBlocks.ZIB_STEEL_BLOCK)
                 .add(ModBlocks.ZIB_STEEL_ORE);
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.ZIB_STEEL_ORE)
+                .add(ModBlocks.ZIB_STEEL_BLOCK);
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.DEEPSLATE_ZIB_STEEL_ORE);
     }

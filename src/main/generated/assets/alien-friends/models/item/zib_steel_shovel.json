@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "alien-friends:item/zib_steel_shovel"
+  }
+}

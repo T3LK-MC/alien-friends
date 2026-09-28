@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alien-friends:zib_steel_pickaxe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zib_steel_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "alien-friends:zib_steel_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_zib_steel_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alien-friends:zib_steel_pickaxe"
+    ]
+  }
+}
