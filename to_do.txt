@@ -1,0 +1,8 @@
+>> Ajouter les sons (entités)
+>> Scale down le modèle de Zab Zab
+>> Ajouter anims (Idle Walk Run clean, Hold item/trade, hold gun)
+>> Génération de minerais naturelle
+>> Variantes d'entités
+>> Ray Gun equipable par Zab-Zab
+>> Son de Ray Guy (goofy alien pipe)
+>> Zib Scanner
