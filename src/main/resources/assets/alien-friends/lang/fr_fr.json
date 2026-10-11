@@ -13,10 +13,13 @@
   "item.alien-friends.zib_steel_chestplate": "Plastron en Zibranium",
   "item.alien-friends.zib_steel_leggings": "Jambières en Zibranium",
   "item.alien-friends.zib_steel_boots": "Bottes en Zibranium",
+  "item.alien-friends.zib_gun": "Zib Laser",
 
   "block.alien-friends.zib_steel_ore": "Minerai de Zibranium",
   "block.alien-friends.zib_steel_block": "Block de Zibranium",
   "block.alien-friends.deepslate_zib_steel_ore": "Minerai de Zibranium des abîmes",
 
-  "itemgroup.alien-friends.alien_items": "Items Alien"
+  "itemgroup.alien-friends.alien_items": "Items Alien",
+
+  "event.alien-friends.invasion": "%s Une troupe de Zab-Zabs est apparue dans les environs! (%s, %s, %s)"
 }

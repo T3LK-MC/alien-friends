@@ -20,9 +20,19 @@ public class ModItemsGroups {
                         entries.accept(ModItems.ZIB_STEEL_INGOT);
                         entries.accept(ModItems.RAW_ZIB_STEEL_ORE);
                         entries.accept(ModItems.ZAB_ZAB_SPAWN_EGG);
+                        entries.accept(ModItems.ZIB_STEEL_AXE);
+                        entries.accept(ModItems.ZIB_STEEL_PICKAXE);
+                        entries.accept(ModItems.ZIB_STEEL_BOOTS);
+                        entries.accept(ModItems.ZIB_STEEL_CHESTPLATE);
+                        entries.accept(ModItems.ZIB_STEEL_HELMET);
+                        entries.accept(ModItems.ZIB_STEEL_LEGGINGS);
+                        entries.accept(ModItems.ZIB_STEEL_SHOVEL);
+                        entries.accept(ModItems.ZIB_STEEL_HOE);
+                        entries.accept(ModItems.ZIB_STEEL_SWORD);
                         entries.accept(ModBlocks.ZIB_STEEL_BLOCK);
                         entries.accept(ModBlocks.ZIB_STEEL_ORE);
                         entries.accept(ModBlocks.DEEPSLATE_ZIB_STEEL_ORE);
+                        entries.accept(ModItems.ZIB_GUN);
                     }).build());
 
     public static void registerItemGroups() {

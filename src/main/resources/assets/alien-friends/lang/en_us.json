@@ -13,10 +13,13 @@
   "item.alien-friends.zib_steel_chestplate": "Zibranium Chestplate",
   "item.alien-friends.zib_steel_leggings": "Zibranium Leggings",
   "item.alien-friends.zib_steel_boots": "Zibranium Boots",
+  "item.alien-friends.zib_gun": "Zib Raygun",
 
   "block.alien-friends.zib_steel_ore": "Zibranium Ore",
   "block.alien-friends.deepslate_zib_steel_ore": "Deepslate Zibranium Ore",
   "block.alien-friends.zib_steel_block": "Block of Zibranium",
 
-  "itemgroup.alien-friends.alien_items": "Alien Items"
+  "itemgroup.alien-friends.alien_items": "Alien Items",
+
+  "event.alien-friends.invasion": "%s A Zab-Zabs ship has landed near near (%s, %s)!"
 }

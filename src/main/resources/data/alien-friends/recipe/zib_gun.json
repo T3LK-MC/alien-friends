@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "combat",
+  "key": {
+    "#": {
+      "item": "alien-friends:zib_steel_ingot"
+    },
+    "O": {
+      "item": "alien-friends:zib_steel_block"
+    },
+    "!": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "/": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "pattern": [
+    "#O!",
+    "#/ "
+  ],
+  "result": {
+    "id": "alien-friends:zib_gun",
+    "count": 1
+  }
+}

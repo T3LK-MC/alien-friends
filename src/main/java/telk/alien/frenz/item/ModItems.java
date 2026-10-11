@@ -4,20 +4,13 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import telk.alien.frenz.AlienFriends;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.ChatFormatting;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.item.ShovelItem;
-import net.minecraft.world.item.HoeItem;
-import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item.TooltipContext;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.TooltipFlag;
+import telk.alien.frenz.entity.ModEntities;
+
 import java.util.List;
 
 public class ModItems {
@@ -35,7 +28,10 @@ public class ModItems {
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             });
-    public static final Item ZAB_ZAB_SPAWN_EGG = registerItem("zab_zab_spawn_egg", new Item(new Item.Properties()));
+    public static final Item ZAB_ZAB_SPAWN_EGG = registerItem("zab_zab_spawn_egg",
+            new SpawnEggItem(ModEntities.ZAB_ZAB, 0x4E9A51, 0x8ED18F, new Item.Properties()));
+    public static final Item ZIB_GUN = registerItem("zib_gun",
+            new ZibGunItem(new Item.Properties().durability(250)));
     public static final Item RAW_ZIB_STEEL_ORE = registerItem("raw_zib_steel_ore", new Item(new Item.Properties()));
     public static final Item ZIB_STEEL_INGOT = registerItem("zib_steel_ingot", new Item(new Item.Properties()));
     // Tools (tier class from ModToolsMaterials)
@@ -80,11 +76,15 @@ public class ModItems {
             return Registry.register(BuiltInRegistries.ITEM, ResourceLocation.fromNamespaceAndPath(AlienFriends.MOD_ID, name), item);
         }
 
+
     public static void registerModItems() {
         AlienFriends.LOGGER.info("Registering Mod Items for " + AlienFriends.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.INGREDIENTS).register(entries -> {
             entries.accept(ZIB_COIN);
+        });
+        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT).register(entries -> {
+            entries.accept(ZIB_GUN);
         });
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.SPAWN_EGGS).register(entries -> {
             entries.accept(ZAB_ZAB_SPAWN_EGG);
@@ -108,6 +108,7 @@ public class ModItems {
             entries.accept(ZIB_STEEL_CHESTPLATE);
             entries.accept(ZIB_STEEL_LEGGINGS);
             entries.accept(ZIB_STEEL_BOOTS);
+            entries.accept(ZIB_GUN);
         });
     }
 }
