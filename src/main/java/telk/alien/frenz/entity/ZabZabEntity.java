@@ -18,9 +18,17 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
+import software.bernie.geckolib.animatable.GeoEntity;
+import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.AnimationState;
+import software.bernie.geckolib.animation.PlayState;
+import software.bernie.geckolib.animation.RawAnimation;
+import software.bernie.geckolib.util.GeckoLibUtil;
 import telk.alien.frenz.item.ModItems;
 
-public class ZabZabEntity extends TamableAnimal {
+public class ZabZabEntity extends TamableAnimal implements GeoEntity {
     private static final SimpleWeightedRandomList<Item> SHINIES = SimpleWeightedRandomList.<Item>builder()
             .add(Items.EMERALD, 20)
             .add(Items.AMETHYST_SHARD, 20)
@@ -33,6 +41,8 @@ public class ZabZabEntity extends TamableAnimal {
             .add(Items.NAUTILUS_SHELL, 2)
             .build();
 
+    private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
+
     public ZabZabEntity(EntityType<? extends TamableAnimal> entityType, Level level) {
         super(entityType, level);
     }
@@ -40,7 +50,7 @@ public class ZabZabEntity extends TamableAnimal {
     public static AttributeSupplier.Builder createAttributes() {
         return Mob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 12.0)
-                .add(Attributes.MOVEMENT_SPEED, 0.50)
+                .add(Attributes.MOVEMENT_SPEED, 0.20)
                 .add(Attributes.FOLLOW_RANGE, 16.0);
     }
 
@@ -104,6 +114,24 @@ public class ZabZabEntity extends TamableAnimal {
         }
 
         return super.mobInteract(player, hand);
+    }
+
+    @Override
+    public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
+        controllers.add(new AnimationController<>(this, "main", 5, this::animationPredicate));
+    }
+
+    private PlayState animationPredicate(AnimationState<ZabZabEntity> state) {
+        if (state.isMoving()) {
+            state.getController().setAnimation(RawAnimation.begin().thenLoop("animation.zab_zab.walk"));
+            return PlayState.CONTINUE;
+        }
+        return PlayState.STOP; // back to the bind pose until an idle animation is added
+    }
+
+    @Override
+    public AnimatableInstanceCache getAnimatableInstanceCache() {
+        return cache;
     }
 
     @Nullable

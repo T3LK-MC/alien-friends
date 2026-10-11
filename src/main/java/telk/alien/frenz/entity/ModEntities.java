@@ -14,7 +14,7 @@ public class ModEntities {
             BuiltInRegistries.ENTITY_TYPE,
             ResourceLocation.fromNamespaceAndPath(AlienFriends.MOD_ID, "zab_zab"),
             FabricEntityTypeBuilder.create(MobCategory.CREATURE, ZabZabEntity::new)
-                    .dimensions(EntityDimensions.fixed(0.6f, 0.8f))
+                    .dimensions(EntityDimensions.fixed(0.8f, 1.5f))
                     .build());
 
     public static void registerEntities() {
